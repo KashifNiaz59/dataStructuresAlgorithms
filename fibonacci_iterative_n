@@ -1,0 +1,52 @@
+// FIBONACCI Series --- ITERATIVE METHOD ---
+// time complexity : O(n)
+// input : integer--> how long be the series --> 5
+// output : fibonacci series e.g. 0,1,1,2,3,5,8,...
+// handles : invalid series number -- just handles integers
+
+public class Fibonacci1 {
+
+    public void displayFib(int aNum){
+        int f0=0;
+        int f1=1;
+        int fn,i;
+
+        if(aNum==1){
+            System.out.println(f0);
+        }
+        else if(aNum==2){
+            System.out.println(f0+" "+f1);
+        }
+        else if(aNum>2){
+            System.out.print(f0+" "+f1+" ");
+            for(i=0;i<aNum-2;i++){
+                fn=f0+f1;
+                f0=f1;
+                f1=fn;
+
+                System.out.print(fn+" ");
+            }
+            System.out.println();
+        }
+        else{
+            System.out.println("Invalid number");
+        }
+
+
+    }// --> display()
+
+    public static void main(String args[]){
+
+        Fibonacci1 fib=new Fibonacci1();
+
+        // aNum == how many numbers you want to display fibonacci series
+        fib.displayFib(1); // output : 0
+        fib.displayFib(2); // output : 0,1
+        fib.displayFib(3); // output : 0,1,1
+        fib.displayFib(10);// output : 0,1,1,2,3,5,8,13,21,44
+        fib.displayFib(0); // output : invalid number
+
+    }
+}
+
+// also shows that the series contains -ve numbers after the 45th series number.
