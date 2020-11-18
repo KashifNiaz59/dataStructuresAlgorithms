@@ -7,7 +7,6 @@
 public class Fibonacci_Recursive_2 {
 
     // calculate the fibonacci number
-    // input : fibonacci series number
     // output : return fibonacci series number
     public int fib(int aNum){
         if(aNum==0)
@@ -28,6 +27,8 @@ public class Fibonacci_Recursive_2 {
         for(int i=0;i<num;i++){
             System.out.print(fib.fib(i)+" ");
         }
-
+        
+        // output : 0,1,1,2,3,5,8,13
+        
     }// --> main
 }// --> class
