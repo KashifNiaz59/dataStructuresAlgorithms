@@ -1,5 +1,8 @@
 // fibonacci series -- Dynamic Programming --
 // time complexity : O(n)
+// input : integer --> n-terms of fibonacci series
+// output : fibonacci series number
+// handling nothing
 
 public class fibonacci_dynamicProgramming {
 
