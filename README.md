@@ -3,3 +3,11 @@ do pratices of Data Structures & Algorithms
 in JAVA and Python programming languages
 indicating Time Complexity in terms of big-O
 
+
+dataStructure/algorithm                                          timeComplexity
+
+fibonacci iterative method using for loop                           O(n)
+fibonacci iterative method using while loop                         O(n)
+fibonacci recursive method                                          O(2^n)
+fibonacci dynamic programming                                       O(n)
+
