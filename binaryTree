@@ -1,0 +1,79 @@
+import java.util.Stack;
+
+class example{
+
+    // tree node class
+    class Node{
+        int key;
+        Node left,right;
+    }// --->Node class
+    
+    // function for newNode()
+    public Node newNode(int aKey){
+        Node temp=new Node();
+
+        temp.key=aKey;
+        temp.left=null;
+        temp.right=null;
+
+        return temp;
+    }// ---> newNode()
+    
+    // insert new node in tree
+    public Node insert(Node root, int aKey){
+        Node newnode=newNode(aKey);
+
+        Node x=root;
+
+        Node y=null;
+
+        while(x!=null){
+            y=x;
+            if(aKey>x.key){
+                x=x.right;
+            }
+            else{
+                x=x.left;
+            }
+        }
+
+        if(y==null){
+            y=newnode;
+        }else if(aKey>y.key){
+            y.right=newnode;
+        }else{
+            y.left=newnode;
+        }
+
+        return y;
+    }// ---> insert()
+    
+    // display the tree in infix order
+    public void display(Node root){
+        if(root!=null){
+            display(root.left);
+            System.out.print(root.key+" ");
+            display(root.right);
+        }
+
+    }// ---> display()
+
+
+    public static void main(String args[]){
+        Node root=null;
+
+        example tree=new example();
+
+        root=tree.insert(root,30);
+        tree.insert(root,50);
+        tree.insert(root,20);
+        tree.insert(root,35);
+        tree.insert(root,88);
+        tree.insert(root,1);
+
+
+        // display inorder
+        tree.display(root);
+    }// ---> main
+
+}// ---> class
