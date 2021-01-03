@@ -17,3 +17,4 @@ linearSearch                                         --->           O(n)
 insertion Sort                                       --->           O(n^2)
 quick Sort                                           --->           O(n^2) ---> best and average case O(N logN)
 Merge Sort                                           --->           O(N logN)
+bubble sort                                          --->           O(n^2) in all cases but 
