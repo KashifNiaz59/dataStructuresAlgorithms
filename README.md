@@ -19,3 +19,4 @@ quick Sort                                           --->           O(n^2) ---> 
 Merge Sort                                           --->           O(N logN)
 bubble sort                                          --->           O(n^2) in all cases but 
 selection sort                                       --->           O(n^2) in all cases
+CountingSort                                         --->           O(n)
