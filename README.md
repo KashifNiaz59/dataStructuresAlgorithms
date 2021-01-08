@@ -21,3 +21,4 @@ bubble sort                                          --->           O(n^2) in al
 selection sort                                       --->           O(n^2) in all cases
 CountingSort                                         --->           O(n)
 Radix Sort                                           --->           O(max*(n+k))
+Shell Sort                                           --->           O(N^2)<--- Worst Case | Average & Best case ---> O(N*logN)
