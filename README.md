@@ -22,3 +22,4 @@ selection sort                                       --->           O(n^2) in al
 CountingSort                                         --->           O(n)
 Radix Sort                                           --->           O(max*(n+k))
 Shell Sort                                           --->           O(N^2)<--- Worst Case | Average & Best case ---> O(N*logN)
+Binary Search                                        --->           O(logN)<--- Worst Case | Best Case ---> O(1)
